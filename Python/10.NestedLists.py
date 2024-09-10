@@ -47,7 +47,37 @@ python students = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti'
 
 The lowest grade of  belongs to Tina. The second lowest grade of  belongs to both Harry and Berry, so we order their names alphabetically and print each name on a new line.
 """
+# THis is my code that i have written
+# if __name__ == '__main__':
+#     python_students=[]
 
+#     for _ in range(int(input())):
+#         name = input()
+#         score = float(input())
+        
+#         python_students.append([name,score])
+
+#     score=[]
+
+#     for i in range(len(python_students)):
+#         score.append(python_students[i][1])
+    
+
+    
+#     min_score=min(score)
+#     initial_chk_score=max(score)
+
+#     for i in range(len(score)):
+#         if score[i]<initial_chk_score and score[i]!=min_score:
+#             initial_chk_score=score[i]
+
+#     python_students.sort()
+
+#     for i in range(len(python_students)):
+#         if python_students[i][1]==initial_chk_score:
+#             print(python_students[i][0])
+
+#More efficient coding with the help of chat GPT
 if __name__ == '__main__':
     python_students=[]
 
@@ -57,23 +87,11 @@ if __name__ == '__main__':
         
         python_students.append([name,score])
 
-    score=[]
+    scores=sorted({student[1] for student in python_students})
+    second_low_score=scores[1]
 
-    for i in range(len(python_students)):
-        score.append(python_students[i][1])
-    
+    second_lowest_students=sorted({student[0] for student in python_students if student[1]==second_low_score})
 
-    
-    min_score=min(score)
-    initial_chk_score=max(score)
-
-    for i in range(len(score)):
-        if score[i]<initial_chk_score and score[i]!=min_score:
-            initial_chk_score=score[i]
-
-    python_students.sort()
-
-    for i in range(len(python_students)):
-        if python_students[i][1]==initial_chk_score:
-            print(python_students[i][0])
+    for student in second_lowest_students:
+        print (student)
 
