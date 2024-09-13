@@ -42,9 +42,9 @@ Sample Output 1
 
 26.50"""
 
-from decimal import Decimal
+
 if __name__ == '__main__':
-    d=Decimal()
+    
     n = int(input())    #here you will input the number of names you will be taking as input
     student_marks = {} #Here you will initialise a dictionary
     for _ in range(n): #here you will create a loop to take the var provided in teh output cli and map them to the dict var
@@ -52,7 +52,7 @@ if __name__ == '__main__':
         scores = list(map(float, line)) # here the float valies are mapped to the list scores
         student_marks[name] = scores # here the values var is mapped to key Var that is name
     query_name = input() # here the query name is the one where you find out the averge marks for that person
-    TWOPLACES= d((10)**-2)
+    
 
     
 
@@ -63,13 +63,13 @@ if __name__ == '__main__':
         for item in student_marks[query_name]:
             sum_of_scores+=item
             marks_count+=1
-        return d(sum_of_scores/marks_count).quantize(TWOPLACES)          
+        return "{:.2f}".format(sum_of_scores/marks_count)         
             
                       
     student_marks_for_student(query_name)
 
     print(f"The total avg of the score for the student\
-        {query_name} is {student_marks_for_student(query_name)}")
+        {query_name} is {student_marks_for_student(query_name)}") #n
 
     #print(student_marks)
 
