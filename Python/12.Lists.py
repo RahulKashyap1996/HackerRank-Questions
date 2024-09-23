@@ -82,7 +82,7 @@ if __name__ == '__main__':
             list_one.pop()
 
         if "reverse" in query:
-            list_one=list_one.reverse()
+            list_one.reverse()
 
         if "append" in query:
             for item in query:
@@ -90,7 +90,43 @@ if __name__ == '__main__':
             list_one.append(query_item)
 
         
-    
+#Chat GPT generated code
+"""
+if __name__ == '__main__':
+    list_one = []
+    N = int(input())  # Read the number of commands
+
+    for i in range(N):
+        query = input().split()
+
+        # Handle each command
+        command = query[0]
+
+        if command == "insert":
+            pos = int(query[1])
+            val = int(query[2])
+            list_one.insert(pos, val)
+
+        elif command == "print":
+            print(list_one)
+
+        elif command == "remove":
+            val = int(query[1])
+            list_one.remove(val)
+
+        elif command == "append":
+            val = int(query[1])
+            list_one.append(val)
+
+        elif command == "sort":
+            list_one.sort()
+
+        elif command == "pop":
+            list_one.pop()
+
+        elif command == "reverse":
+            list_one.reverse()
+"""  
             
 
             
