@@ -51,6 +51,52 @@ Given list is . The maximum score is , second maximum is . Hence, we print  as t
     # After the loop, 'Snd_Max' will hold the second largest value.
     print(Snd_Max)  # Prints the second largest number in the list.
 """
+#Write your code here the answer is at line 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 if __name__ == '__main__':
     n = int(input())

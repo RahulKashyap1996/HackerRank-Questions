@@ -55,6 +55,49 @@ Sample Output 0
 [1, 5, 9, 10]
 [9, 5, 1]"""
 
+#Write your code here the answer is at line 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if __name__ == '__main__':
     list_one=[]
     N = int(input())

@@ -35,6 +35,69 @@ Sample Output
 
 this-is-a-string"""
 
+#Write your code here the answer is at line 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def split_and_join(line):
     # write your code here
     a=line.split(" ")
