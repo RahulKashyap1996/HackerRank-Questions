@@ -103,8 +103,7 @@ def count_substring(string, sub_string):
     for k in range(len(string)-(l-1)):
         if string[k:(k+l)]==sub_string:
                 count+=1
-                
-                        
+                                        
     return count
 
 if __name__ == '__main__':
